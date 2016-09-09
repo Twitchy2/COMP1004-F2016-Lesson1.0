@@ -16,5 +16,10 @@ namespace NEW_BUTTON_TRY_3
         {
             InitializeComponent();
         }
+
+        private void buttonPress_Click(object sender, EventArgs e)
+        {
+            wordLabel.Text = "It took me around 4 hours\n to download this.\n Yet it took 2 minutes to code this.";
+        }
     }
 }

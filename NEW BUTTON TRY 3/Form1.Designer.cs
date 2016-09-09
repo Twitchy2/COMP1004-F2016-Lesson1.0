@@ -28,12 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonPress = new System.Windows.Forms.Button();
+            this.wordLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // buttonPress
+            // 
+            this.buttonPress.Location = new System.Drawing.Point(107, 193);
+            this.buttonPress.Name = "buttonPress";
+            this.buttonPress.Size = new System.Drawing.Size(75, 23);
+            this.buttonPress.TabIndex = 0;
+            this.buttonPress.Text = "Press me";
+            this.buttonPress.UseVisualStyleBackColor = true;
+            this.buttonPress.Click += new System.EventHandler(this.buttonPress_Click);
+            // 
+            // wordLabel
+            // 
+            this.wordLabel.AutoSize = true;
+            this.wordLabel.Location = new System.Drawing.Point(74, 65);
+            this.wordLabel.Name = "wordLabel";
+            this.wordLabel.Size = new System.Drawing.Size(132, 26);
+            this.wordLabel.TabIndex = 1;
+            this.wordLabel.Text = "Guess what happens \r\nwhen you press the button";
+            this.wordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(300, 271);
+            this.Controls.Add(this.wordLabel);
+            this.Controls.Add(this.buttonPress);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Form1";
+            this.Text = "Press The Button";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonPress;
+        private System.Windows.Forms.Label wordLabel;
     }
 }
 
