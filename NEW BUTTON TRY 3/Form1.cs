@@ -21,5 +21,10 @@ namespace NEW_BUTTON_TRY_3
         {
             wordLabel.Text = "It took me around 4 hours\n to download this.\n Yet it took 2 minutes to code this.";
         }
+
+        private void buttonPress_MouseHover(object sender, EventArgs e)
+        {
+            buttonPress.Text = "It hurts to live.";
+        }
     }
 }

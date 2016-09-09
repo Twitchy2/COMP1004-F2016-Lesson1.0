@@ -34,13 +34,14 @@
             // 
             // buttonPress
             // 
-            this.buttonPress.Location = new System.Drawing.Point(107, 193);
+            this.buttonPress.Location = new System.Drawing.Point(101, 193);
             this.buttonPress.Name = "buttonPress";
-            this.buttonPress.Size = new System.Drawing.Size(75, 23);
+            this.buttonPress.Size = new System.Drawing.Size(85, 35);
             this.buttonPress.TabIndex = 0;
             this.buttonPress.Text = "Press me";
             this.buttonPress.UseVisualStyleBackColor = true;
             this.buttonPress.Click += new System.EventHandler(this.buttonPress_Click);
+            this.buttonPress.MouseHover += new System.EventHandler(this.buttonPress_MouseHover);
             // 
             // wordLabel
             // 
